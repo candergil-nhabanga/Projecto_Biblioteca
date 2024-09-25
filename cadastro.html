@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/Css/cadastro.css">
+</head>
+<body>
+    <div class="main"> 
+        <header><img src="img/calibre_104497.png"><h1>Registro Bibliotecario</h1></header>
+        <div class="cadastro">
+            <h1>Registro</h1>
+            <form action="">
+                <label for="">Nome</label>
+                <input class="entrada" placeholder="Digite o seu nome"><br>
+                <label for="apelido">Sobrenome</label>
+                <input class="entrada" type="text" name="apelido" placeholder="Digite o seu sobrenome"><br>
+                <label for="">Email</label>
+                <input class="entrada" type="email" placeholder="Digite o seu email"><br>
+                <label for="lcs">Numero de licenca</label>
+                <input class="entrada" type="text" placeholder="licenca" id="lcs"><br>
+                <label>Genero</label><br>
+                <input type="radio" id="sex" name="sexo" value="M">
+                <label for="sef">Masculino</label>
+                <input id="sef" type="radio" name="sexo" value="F">
+                <label for="sef">Femenino</label><br>
+                <label for="tipo">Tipo de Usuario</label><br>
+                <input id="tipo" type="radio" name="register" >
+                <label for="">Registrado</label>
+                <input id="tipo" type="radio" name="register" >
+                <label for="tipo">Nao registrado</label><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

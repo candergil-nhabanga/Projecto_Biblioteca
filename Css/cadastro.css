@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    height: 70px;
+    width: 70px;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 240, 250);
+    padding-top: 10vh;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cadastro {
+    
+    height: 70%;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.cadastro form {
+    margin: 15px;
+    padding: 15px;
+}
+.cadastro form .entrada, button {
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    font-size: 16px;
+}
+
+.cadastro form button {
+    margin-top: 10px;
+}
