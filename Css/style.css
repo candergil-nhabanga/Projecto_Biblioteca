@@ -1,11 +1,11 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo do corpo */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* Estilo do cabeçalho e menu de navegação */
+
 header {
     background-color: #333;
     color: white;
@@ -36,7 +36,7 @@ header nav ul li a {
     font-weight: bold;
 }
 
-/* Seção com logo e nome da biblioteca */
+
 .icone-texto {
     text-align: center;
     margin: 20px 0;
@@ -47,7 +47,7 @@ header nav ul li a {
     margin: 0 auto;
 }
 
-/* Seção de pesquisa */
+
 .pesquisa {
     text-align: center;
     margin: 20px 0;
@@ -70,14 +70,14 @@ header nav ul li a {
     background-color: #555;
 }
 
-/* Imagem principal */
+
 .container img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* Estilo das seções de livros */
+
 .livros {
     margin: 40px auto;
     text-align: center;
@@ -96,7 +96,7 @@ header nav ul li a {
     margin: 0 auto;
 }
 
-/* Estilo do rodapé */
+
 footer {
     background-color: #333;
     color: white;
