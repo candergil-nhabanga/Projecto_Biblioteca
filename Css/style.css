@@ -1,115 +1,58 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
-}
-
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
-.icone-texto {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.icone-texto img {
-    display: block;
-    margin: 0 auto;
-}
-
-
-.pesquisa {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.pesquisa input[type="search"] {
-    padding: 10px;
-    width: 300px;
-}
-
-.pesquisa button {
-    padding: 10px 15px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.pesquisa button:hover {
-    background-color: #555;
-}
-
-
-.container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-
-.livros {
-    margin: 40px auto;
-    text-align: center;
-}
-
-.livros table {
+  }
+  
+  .menu {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+    grid-template-rows: 1fr 8fr 1fr;
+  }
+  
+  header {
+    height: 5vh;
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
+  }
+  
+  .fundo {
+    background-image: url('/img/bibiio.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+  }
+  
+  main {
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+    overflow: auto; /* Permite a rolagem no conteúdo principal */
 
-.livros img {
-    width: 150px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin: 100px;
+  }
+  
+  .card {
+    border: 1px solid black;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: blue;
     text-align: center;
-}
-
-footer .finais {
-    display: flex;
-    justify-content: space-around;
-}
-
-footer .finais h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
+    color: white;
+    padding: 10px;
+  }
+  
